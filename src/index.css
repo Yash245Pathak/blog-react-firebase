@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#outline{
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.btn{
+    width: fit-content;
+    height: auto;
+    padding: 10px 20px;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, #817de8 0%, #0b0866 84%);
+    transition: all 0.5s;
+    font-size: 20px;
+    font-weight: 200;
+}
+.btn:hover{
+    background-position: right center;
+}
+.btn-pill{
+    width: fit-content;
+    height: auto;
+    padding: 10px 20px;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, #817de8 0%, #0b0866 84%);
+    transition: all 0.5s;
+    font-size: 20px;
+    font-weight: 200;
+    border-radius: 40px;
+}
+.btn-pill:hover{
+    background-position: right center;
+}
+.back{
+    /* background: linear-gradient(to right, #24243e, #302b63, #3422cf);    */
+    background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
+    padding: 15px;
+}
+.home-back{
+    background-image: url("assets/home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
