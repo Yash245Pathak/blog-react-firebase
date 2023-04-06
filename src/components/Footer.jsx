@@ -14,23 +14,23 @@ function Footer() {
         <div className='flex flex-col items-center my-5'>
           <h1 className='font-bold text-[24px] md:text-[35px]'>Blogs</h1>
           <div className='flex flex-col text-center'>
-            <span className='font-thin text-[17px]'> <Link to={"/"}>Recent Blogs</Link> </span>
-            <span className='font-thin text-[17px]'> <Link to={"/"}>Popular Blogs</Link> </span>
+            <span className='font-thin text-[17px] opacity-50 hover:opacity-75 transition-all'> <Link to={"/"}>Recent Blogs</Link> </span>
+            <span className='font-thin text-[17px] opacity-50 hover:opacity-75 transition-all'> <Link to={"/"}>Popular Blogs</Link> </span>
           </div>
         </div>
         <div className='flex flex-col items-center my-5'>
           <h1 className='font-bold text-[24px] md:text-[35px]'>Services</h1>
           <div className='flex flex-col text-center'>
-            <span className='font-thin text-[17px]'> <Link to={"/"}>Blog Website</Link> </span>
-            <span className='font-thin text-[17px]'> <Link to={"/"}>Portfolio Management</Link> </span>
+            <span className='font-thin text-[17px] opacity-50 hover:opacity-75 transition-all'> <Link to={"/"}>Blog Website</Link> </span>
+            <span className='font-thin text-[17px] opacity-50 hover:opacity-75 transition-all'> <Link to={"/"}>Portfolio Management</Link> </span>
           </div>
         </div>
         <div className='flex flex-col justify-center items-center mx-auto max-w-max md:mx-0'>
           <span className='font-semibold text-[20px] opacity-60'>Copyright &#169; Blog.</span>
           <span>Join with our socials</span>
           <div className='flex gap-x-3 p-2 max-w-max items-center'>
-            <a href="https://github.com/Yash245Pathak" target={'black'} className='cursor-pointer'><img src={github} alt="" /></a>
-            <a href='https://www.linkedin.com/in/yash-pathak-10a6031b6/' target={'black'} className='cursor-pointer'><img src={linkedin} alt="" /></a>
+            <a href="https://github.com/Yash245Pathak" target={'black'} className='cursor-pointer hover:scale-125 transition-all'><img src={github} alt="" /></a>
+            <a href='https://www.linkedin.com/in/yash-pathak-10a6031b6/' target={'black'} className='cursor-pointer hover:scale-125 transition-all'><img src={linkedin} alt="" /></a>
           </div>
         </div>
       </div>

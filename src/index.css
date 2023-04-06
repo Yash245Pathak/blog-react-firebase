@@ -36,6 +36,22 @@
 .btn-pill:hover{
     background-position: right center;
 }
+.btn-pill-sm{
+    width: fit-content;
+    height: auto;
+    padding: 5px 10px;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, #817de8 0%, #0b0866 84%);
+    transition: all 0.5s;
+    font-size: 14px;
+    font-weight: 100;
+    border-radius: 40px;
+    color: white;
+}
+.btn-pill-sm:hover{
+    background-position: right center;
+
+}
 .back{
     /* background: linear-gradient(to right, #24243e, #302b63, #3422cf);    */
     background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
