@@ -47,6 +47,7 @@
         height: fit-content;
         transform: translateX(-200%);
         transition: all .9s;
+        z-index: 9;
     }
     .navbar-items>div{
         display: flex;
