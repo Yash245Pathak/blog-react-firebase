@@ -2,11 +2,8 @@ import React from 'react'
 import cartoon from "../assets/cartoon1.png"
 import google from "../assets/google.png"
 import { useGlobal } from './Context'
-// import { auth, provider } from "../firebase-config"
-// import { signInWithPopup } from "firebase/auth"
 
-
-function Login({ setIsAuth }) {
+function Login() {
 
   const { signInWithGoogle } = useGlobal();
 
