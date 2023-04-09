@@ -6,6 +6,8 @@ import Login from "./components/Login";
 import Blogpage from "./components/Blogpage";
 import Singleblog from "./components/Singleblog";
 import CreateBlog from "./components/CreateBlog";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function App() {
   return (
@@ -19,6 +21,7 @@ export default function App() {
         <Route path="/login" element={<Login />} />
       </Routes>
       <Footer />
+      <ToastContainer />
     </>
   )
 }
