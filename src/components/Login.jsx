@@ -2,11 +2,18 @@ import React from 'react'
 import cartoon from "../assets/cartoon1.png"
 import google from "../assets/google.png"
 import { useGlobal } from './Context'
+import { useNavigate } from "react-router-dom"
+import { toast } from 'react-toastify'
 
 function Login() {
 
-  const { signInWithGoogle } = useGlobal();
+  let navigate = useNavigate();
+  const { signInWithGoogle, isAuth } = useGlobal();
 
+  if(isAuth === true) {
+    navigate("/")
+    toast.error("Already LogedIn!!!")
+  }
 
   return (
     <div className='flex my-8 flex-col md:flex-row justify-center items-center w-full h-auto'>
