@@ -3,6 +3,7 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 import menu from "../assets/menu.png"
 import { useGlobal } from "./Context";
+import { auth } from "../firebase"
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +19,7 @@ const Header = () => {
             <span><Link to="/">Home</Link></span>
             <span><Link to="/blog">Blogs</Link></span>
             {isAuth && <span className="capitalize italic font-medium hover:underline transition-all"><Link to="/create">Create a new blog</Link></span>}
+            {isAuth && <span className="capitalize italic font-thin">{auth.currentUser.displayName}</span>}
           </div>
           {!isAuth ? <button className="btn-pill"><Link to="/login">LogIn</Link></button> : <button className="btn-pill" onClick={signedOut}>Logout</button>}
         </div>

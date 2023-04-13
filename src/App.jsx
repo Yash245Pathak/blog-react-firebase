@@ -6,8 +6,9 @@ import Login from "./components/Login";
 import Blogpage from "./components/Blogpage";
 import Singleblog from "./components/Singleblog";
 import CreateBlog from "./components/CreateBlog";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Notfound from "./components/Notfound";
 
 export default function App() {
   return (
@@ -16,12 +17,13 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blogpage />} />
-        <Route path="/singleblog" element={<Singleblog />} />
+        <Route path="/singleblog/:id" element={<Singleblog />} />
         <Route path="/create" element={<CreateBlog />} />
         <Route path="/login" element={<Login />} />
+        <Route path="*" element={<Notfound />} />
       </Routes>
       <Footer />
-      <ToastContainer />
+      <ToastContainer position="bottom-right" />
     </>
   )
 }

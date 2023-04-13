@@ -12,7 +12,7 @@ function Login() {
 
   if(isAuth === true) {
     navigate("/")
-    toast.error("Already LogedIn!!!")
+    toast.error("Already LogedIn!!!") 
   }
 
   return (
